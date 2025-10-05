@@ -14,5 +14,7 @@ inpEl.addEventListener('change',async(e)=>
                 showBorderEl.innerHTML+=`</br><div class='card-border'><img src=${e.flags.svg}></img><p>${e.name.common}</p></div>`
                })
     }
-    catch(error){alert(error)}
+    catch(error){
+        showEl.textContent='country not found'
+    }
 })
